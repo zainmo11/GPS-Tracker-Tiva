@@ -32,6 +32,7 @@ graph TD;
     Arduino-->buzzer;
     Tiva-->|AT Wifi commands|Wifi_module;
     Wifi_module-->|custom made <br> Server commands|TCP_Server;
+    Wifi_module-->|Data|Tiva
     TCP_Server-->|response|Wifi_module;
     Application-->|custom made <br> application commands|TCP_Server;
     TCP_Server-->|response|Application;
